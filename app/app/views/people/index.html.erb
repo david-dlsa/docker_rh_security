@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Pessoas</li>
+  </ol>
+</nav>
+
+<div class="card">
+  <h3 class="card-header">Pesquisar</h3>
+  <div class="card-body">
+    <%= form_tag(people_path, :method => :get) do %>
+      <div class="row g-3">
+
+        <div class="col-12">
+          <%= text_field_tag 'search', nil, placeholder: 'Pesquisar por...', class: "form-control"%> 
+        </div>
+
+        <div class="col-md-4">
+        <th><strong>Sexo</strong></th></br>
+          <%= radio_button 'search_sex', nil, 'Masculino'%> Masculino <br/>
+          <%= radio_button 'search_sex', nil, 'Feminino'%> Feminino <br/>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+          <th><strong>Lotação</strong></th>
+            <div>
+              <%= select_tag 'search_workspace', options_for_select(@workspace_title.collect{ |u| [u[0], u[1]] }), {include_blank: 'Selecione a Lotação...', class:"form-select"}%>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <th><strong>Cargo</strong></th> 
+            <div>
+              <%= select_tag 'search_job_role', options_for_select(@job_role_title.collect{ |u| [u[0], u[1]] }), {include_blank: 'Selecione o Cargo...', class: "form-select"}%>
+            </div>
+        </div> 
+        <% if authenticate_adm? %>
+          <div class="col-md-11">
+            <%= link_to "Nova Pessoa", new_person_path, class: "btn btn-success" %>
+          </div>
+        <% end %>
+        
+        <div class="col">
+          <%= submit_tag "Filtrar", class:  "btn btn-primary"%>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<table class = "table table-striped table-bordered" style="margin-top:15px">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matricula</th>
+      <th>Data Nascimento</th>
+      <th>Sexo</th>
+      <th>Lotação</th>
+      <th>Cargo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.description %></td>
+        <td><%= person.registration %></td>
+        <td><%= person.birth_date %></td>
+        <td><%= person.sex %></td>
+        <td><%= person.workspace.title %></td>
+        <td><%= person.job_role.title %></td>
+        <td><%= link_to fa_icon("eye"), person %></td>
+        <td><%= link_to fa_icon("edit"), edit_person_path(person) if authenticate_adm? %></td>
+        <td><%= link_to fa_icon("trash"), person, method: :delete, data: { confirm: 'Tem certeza?' } if authenticate_adm?%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

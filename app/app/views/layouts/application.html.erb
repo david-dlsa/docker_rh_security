@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RhChallenge</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if user_signed_in? %>
+<!--      <a href="/">Home</a>-->
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+    <% else %>
+      <a href="/users/sign_in">Logar</a>
+    <% end %>
+
+    <%= yield %>
+    </div>
+  </body>
+</html>

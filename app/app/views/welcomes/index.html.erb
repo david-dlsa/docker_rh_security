@@ -1,0 +1,5 @@
+<h1>Bem-vindo!!!</h1>
+<%= link_to 'Pessoas', people_path %><br>
+<%= link_to 'Lotações', workspaces_path if authenticate_adm? %><br>
+<%= link_to 'Cargos', job_roles_path if authenticate_adm? %><br>
+

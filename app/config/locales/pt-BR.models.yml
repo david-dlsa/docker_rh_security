@@ -1,0 +1,19 @@
+'pt-BR':
+  activerecord:
+    attributes:
+      person:
+        registration: 'Matrícula'
+        description: 'Nome'
+        birth_date: 'Data de Nascimento'
+        birth_county: 'Munincipio de Nascimento'
+        birth_state: 'Estado de Nascimento'
+        marital_status: 'Estado Civil'
+        sex: 'Sexo'
+        job_role: 'Cargo'
+        workspace: 'Lotação'
+        workspace_id: 'Lotação'
+        job_role_id: 'Cargo'
+      contact:
+        telephone: 'Telefone'
+        cell_phone: 'Celular'
+        email: 'Email'

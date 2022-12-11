@@ -1,0 +1,14 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Cargos', job_roles_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Editar</li>
+  </ol>
+</nav>
+
+<h1>Editing Job Role</h1>
+
+<%= render 'form', job_role: @job_role %>
+
+<%= link_to 'Show', @job_role %> |
+<%= link_to 'Back', job_roles_path %>

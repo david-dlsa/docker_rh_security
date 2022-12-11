@@ -1,0 +1,28 @@
+<div class="nested-fields">
+    <div class="card">
+    <h5 class="card-header">Contato</h5>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-4">
+                  <%= f.label :telephone %></br>
+                    <%= f.text_field :telephone , placeholder:"Escreva seu Telefone"%> 
+                </div>
+
+                <div class="col-md-4">
+                    <%= f.label :cell_phone %></br>
+                    <%= f.text_field :cell_phone , placeholder:"Escreva seu Celular"%>
+                </div>
+
+                <div class="col-md-4">
+                    <%= f.label :email %></br>
+                    <%= f.text_field :email, type: 'email' , placeholder:"Escreva seu Email"%>
+                </div>
+
+                <div class="col-md-12">
+                    <%= link_to_remove_association 'Remover', f , class:  "btn btn-danger"%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

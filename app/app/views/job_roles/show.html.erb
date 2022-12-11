@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Cargos', job_roles_path %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @job_role.title %></li>
+  </ol>
+</nav>
+
+<p>
+  <strong>Title:</strong>
+  <%= @job_role.title %>
+</p>
+
+<%= link_to 'Edit', edit_job_role_path(@job_role) %> |
+<%= link_to 'Back', job_roles_path %>

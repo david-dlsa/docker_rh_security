@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Lotação', workspaces_path %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @workspace.title %></li>
+  </ol>
+</nav>
+
+<p>
+  <strong>Title:</strong>
+  <%= @workspace.title %>
+</p>
+
+<%= link_to 'Edit', edit_workspace_path(@workspace) %> |
+<%= link_to 'Back', workspaces_path %>

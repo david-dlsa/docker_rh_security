@@ -1,0 +1,13 @@
+current directory: /home/david/Projetos/projeto1/rh_challenge_david_andrade/vendor/cache/ruby/2.5.0/gems/json-2.5.1/ext/json
+/home/david/.rvm/rubies/ruby-2.5.3/bin/ruby -I /home/david/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210921-24623-5skgp1.rb extconf.rb
+creating Makefile
+
+current directory: /home/david/Projetos/projeto1/rh_challenge_david_andrade/vendor/cache/ruby/2.5.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/david/Projetos/projeto1/rh_challenge_david_andrade/vendor/cache/ruby/2.5.0/gems/json-2.5.1/ext/json
+make "DESTDIR="
+make: Nada a ser feito para 'all'.
+
+current directory: /home/david/Projetos/projeto1/rh_challenge_david_andrade/vendor/cache/ruby/2.5.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" install

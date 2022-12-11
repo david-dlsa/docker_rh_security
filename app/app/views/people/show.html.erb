@@ -1,0 +1,118 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Pessoas', people_path %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @person.description %></li>
+  </ol>
+</nav>
+
+<p id="notice"><%= notice %></p>
+
+<div class="card">
+  <div class="card-body"> 
+    <div class="row g">
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Matricula:</strong>
+          <%= @person.registration %>
+        </p>
+      </div>
+      
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Nome:</strong>
+          <%= @person.description %>
+        </p>
+      </div>
+    
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Data Nascimento:</strong>
+          <%= @person.birth_date %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Munincipio de Nascimento:</strong>
+          <%= @person.birth_county %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Estado de Nascimento:</strong>
+          <%= @person.birth_state %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Estado Civil:</strong>
+          <%= @person.marital_status %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-6">
+        <p>
+          <strong>Sexo:</strong>
+          <%= @person.sex %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-3">
+        <p>
+          <strong>Lotação:</strong>
+          <%= @person.workspace.title %>
+        </p>
+      </div>
+
+      <div class="form-group col-md-9">
+        <p>
+          <strong>Cargo:</strong>
+          <%= @person.job_role.title %>
+        </p>
+      </div>
+    
+      <% if @contacts.any? %>
+        <div class="card" style="margin-bottom:15px">  
+          <div class="card-header">Contatos</div>
+            <% @contacts.each do |contact|%>
+              <div class="card-body">
+                <div class="row g-3">
+                  <div class="form-group col-md-4">
+                    <p>
+                      <strong>Telefone:</strong>
+                      <%= contact.telephone %>
+                    </p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p>
+                      <strong>Celular:</strong>
+                      <%= contact.cell_phone %>
+                    </p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p>
+                      <strong>Email:</strong>
+                      <%= contact.email %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+        </div>
+      <% end%>
+    
+      <div class="form-group col-md-9">
+        <%= link_to 'Voltar', people_path , class:  "btn btn-secondary"%>
+      </div>
+      <div class="form-group col">
+        <%= link_to 'Excluir', @people, method: :delete, data: { confirm: 'Tem certeza?' }, class:"btn btn-danger" if authenticate_adm? %>
+      </div>
+      <div class="form-group col">
+        <%= link_to 'Editar', edit_person_path(@person), class:  "btn btn-primary" if authenticate_adm? %>
+      </div>
+    </div>
+  </div>
+</div>

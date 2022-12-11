@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  registration: MyString
+  birth_date: 2021-09-21
+  birth_county: MyString
+  marital_status: MyString
+  sex: MyString
+  workspace: one
+  job_role: one
+
+two:
+  description: MyString
+  registration: MyString
+  birth_date: 2021-09-21
+  birth_county: MyString
+  marital_status: MyString
+  sex: MyString
+  workspace: two
+  job_role: two

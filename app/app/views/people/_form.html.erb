@@ -1,0 +1,81 @@
+<div class="card">
+  <div class="card-body"> 
+    <%= form_with(model: person, local: true) do |form| %>
+      <% if person.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(person.errors.count, "error") %>Não é possível salvar essa pessoa por:</h2>
+
+          <ul>
+          <% person.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      
+      <div class="row g-3" style="margin-x:15px">
+        
+        <div class="field col-md-4">
+          <%=form.label :registration%>
+          <%= form.text_field :registration, id: :person_registration, placeholder:"Escreva sua Matricula", class:"form-control"%>
+        </div>
+        
+        <div class="field col-md-4">
+          <%= form.label :description %>
+          <%= form.text_field :description, id: :person_description, placeholder:"Escreva seu Nome", class:"form-control"%>
+        </div>
+        
+        <div class="field col-md-4">
+          <%= form.label :birth_date %>
+          <%= form.date_field :birth_date, id: :person_birth_date, :order => [:day, :month, :year], :start_year => 1900, class:"form-control"%>
+        </div>
+        
+        <div class="field col-md-3">
+          <%= form.label :birth_county %>
+          <%= form.text_field :birth_county, id: :person_birth_county, placeholder:"Escreva seu Munincipio de Nascimento", class:"form-control" %>
+        </div>
+
+        <div class="field col-md-3">
+          <%= form.label :birth_state %>
+          <%= form.text_field :birth_state, id: :person_birth_state, placeholder:"Escreva seu Estado de Nascimento", class:"form-control" %>
+        </div>
+      
+        <div class="field col-md-3">
+          <%= form.label :marital_status %>
+          <%= form.select(:marital_status, %w{ Solteiro(a) Casado(a) Divorciado(a) }, {include_blank: 'Selecione o Estado Civil'}, class:"form-select")%>
+        </div>
+
+        <div class="field col-md-3">
+          <%= form.label :sex %>
+          <%= form.select(:sex, %w{ Masculino Feminino }, {include_blank: 'Selecione o Sexo'}, class:"form-select")%>
+        </div>
+      
+        <div class="field col-md-6">
+          <%= form.label :workspace %>
+          <%= form.select("workspace_id", @workspace_title, {include_blank: 'Selecione a Lotação'}, class:"form-control", class:"form-select")%>
+        </div>
+        
+        <div class="field col-md-6">
+          <%= form.label :job_role %>
+          <%= form.select("job_role_id", @job_role_title, {include_blank: 'Selecione o Cargo'}, class:"form-control", class:"form-select")%>
+        </div>
+
+        <div id='contacts'>
+          <%= form.fields_for :contacts do |contact| %>
+            <%= render partial: "contact_fields", locals: {f: contact} %>
+          <% end %>
+        </div>
+        
+        <div class="col-md-10">
+          <%= link_to_add_association 'Adicionar Contato', form, :contacts, class: "btn btn-success"%>
+        </div>
+
+        <div class="actions col">
+          <%= form.submit "Salvar", class: "btn btn-primary"%>
+        </div>
+
+      </div>
+
+    <% end %>
+  </div>
+</div>

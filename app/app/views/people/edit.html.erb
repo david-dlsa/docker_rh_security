@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Pessoas', people_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Edição</li>
+  </ol>
+</nav>
+
+<h1 class="text-center">Editar Pessoa</h1>
+
+<%= render 'form', person: @person %>
+
+<%= link_to 'Voltar', people_path , class:  "btn btn-secondary", style: "margin-top:10px"%>

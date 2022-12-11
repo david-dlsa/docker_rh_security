@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Lotação</li>
+  </ol>
+</nav>
+
+<h1>Workspaces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workspace</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @workspaces.each do |workspace| %>
+      <tr>
+        <td><%= workspace.title %></td>
+        <td><%= link_to 'Show', workspace %></td>
+        <td><%= link_to 'Edit', edit_workspace_path(workspace) %></td>
+        <td><%= link_to 'Destroy', workspace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Workspace', new_workspace_path %>

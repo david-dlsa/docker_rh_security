@@ -1,0 +1,14 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Bem-Vindo', root_path %></li>
+    <li class="breadcrumb-item"><%= link_to 'Lotação', workspaces_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Editar</li>
+  </ol>
+</nav>
+
+<h1>Editing Workspace</h1>
+
+<%= render 'form', workspace: @workspace %>
+
+<%= link_to 'Show', @workspace %> |
+<%= link_to 'Back', workspaces_path %>
