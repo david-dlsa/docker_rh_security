@@ -19017,3 +19017,1096 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:34:05 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 9 pending migrations:
+
+20171211191210_create_workspaces.rb
+20171211191243_create_job_roles.rb
+20210921193207_create_people.rb
+20210922174615_add_birth_state_to_people.rb
+20210924185608_create_contacts.rb
+20210927174801_add_people_to_contacts.rb
+20210928181700_create_welcomes.rb
+20221130022436_devise_create_users.rb
+20221202224134_add_admin_to_user.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/evented_file_update_checker.rb:57:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+better_errors (2.9.1) lib/better_errors/middleware.rb:62:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (6.0.0) lib/puma/configuration.rb:268:in `call'
+puma (6.0.0) lib/puma/request.rb:89:in `block in handle_request'
+puma (6.0.0) lib/puma/thread_pool.rb:343:in `with_force_shutdown'
+puma (6.0.0) lib/puma/request.rb:88:in `handle_request'
+puma (6.0.0) lib/puma/server.rb:430:in `process_client'
+puma (6.0.0) lib/puma/server.rb:233:in `block in run'
+puma (6.0.0) lib/puma/thread_pool.rb:150:in `block in spawn_thread'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkspaces (20171211191210)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "workspaces" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191210"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJobRoles (20171211191243)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "job_roles" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191243"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePeople (20210921193207)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "description" character varying, "registration" character varying, "birth_date" date, "birth_county" character varying, "marital_status" character varying, "sex" character varying, "workspace_id" bigint, "job_role_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_cdb8084085"
+FOREIGN KEY ("workspace_id")
+  REFERENCES "workspaces" ("id")
+, CONSTRAINT "fk_rails_9f83277d08"
+FOREIGN KEY ("job_role_id")
+  REFERENCES "job_roles" ("id")
+)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_people_on_workspace_id" ON "people" ("workspace_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE INDEX "index_people_on_job_role_id" ON "people" ("job_role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210921193207"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBirthStateToPeople (20210922174615)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "people" ADD "birth_state" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210922174615"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateContacts (20210924185608)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" bigserial primary key, "telephone" character varying, "cell_phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210924185608"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPeopleToContacts (20210927174801)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contacts" ADD "person_id" bigint[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE INDEX "index_contacts_on_person_id" ON "contacts" ("person_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "contacts" ADD CONSTRAINT "fk_rails_29a08acb61"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210927174801"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWelcomes (20210928181700)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "welcomes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210928181700"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20221130022436)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221130022436"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUser (20221202224134)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202224134"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-12 04:34:36.798855"], ["updated_at", "2022-12-12 04:34:36.798855"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:34:42 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Allocations: 4247)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2022-12-12 04:34:42 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 596)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 387.6ms | Allocations: 193123)
+  Rendered layout layouts/application.html.erb (Duration: 1015.2ms | Allocations: 404507)
+Completed 200 OK in 1049ms (Views: 1018.0ms | ActiveRecord: 4.3ms | Allocations: 420602)
+
+
+Started GET "/users/sign_up" for 172.20.0.1 at 2022-12-12 04:35:08 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+Started GET "/users/sign_up" for 172.20.0.1 at 2022-12-12 04:36:38 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 9462)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 17034)
+Completed 200 OK in 45ms (Views: 27.5ms | ActiveRecord: 4.0ms | Allocations: 25905)
+
+
+Started POST "/users" for 172.20.0.1 at 2022-12-12 04:36:49 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zRvDOxjrQ/seG9GAnetyXsFC34Ae7fXhYIbTeMXorH/Sx+jpUsrLpLj8ADGT+29zx43ysHZ039GK4/ms1pqKoA==", "user"=>{"email"=>"laykabuss@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "laykabuss@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "laykabuss@gmail.com"], ["encrypted_password", "[FILTERED]"], ["created_at", "2022-12-12 04:36:49.664230"], ["updated_at", "2022-12-12 04:36:49.664230"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 333ms (ActiveRecord: 2.6ms | Allocations: 10781)
+
+
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:36:49 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 7609)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 11376)
+
+
+Started GET "/asggrahreheraher" for 172.20.0.1 at 2022-12-12 04:37:12 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"asggrahreheraher"}
+ErrorInfoMailer#catch_error: processed outbound mail in 3.0ms
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms | Allocations: 38276)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column users.is_admin does not exist
+LINE 1: SELECT "users".* FROM "users" WHERE "users"."is_admin" = $1 ...
+                                            ^
+HINT:  Perhaps you meant to reference the column "users.admin".
+):
+  
+app/mailers/error_info_mailer.rb:5:in `catch_error'
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/asggrahreheraher" for 172.20.0.1 at 2022-12-12 04:38:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"asggrahreheraher"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 2.1ms | Allocations: 117)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.9ms | Allocations: 291)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.5ms | Allocations: 107)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.2ms | Allocations: 260)
+ErrorInfoMailer#catch_error: processed outbound mail in 33.3ms
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 28854)
+
+
+  
+ArgumentError (SMTP From address may not be blank):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/asggrahreheraher" for 172.20.0.1 at 2022-12-12 04:39:54 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"asggrahreheraher"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 2958)
+
+
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:39:54 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7624)
+Completed 200 OK in 29ms (Views: 9.6ms | ActiveRecord: 4.1ms | Allocations: 16470)
+
+
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:40:53 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 7440)
+Completed 200 OK in 21ms (Views: 7.7ms | ActiveRecord: 3.6ms | Allocations: 16225)
+
+
+Started GET "/afgwagawgwg" for 172.20.0.1 at 2022-12-12 04:41:02 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afgwagawgwg"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 15.6ms
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 25725)
+
+
+  
+ArgumentError (SMTP From address may not be blank):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/afgwagawgwg" for 172.20.0.1 at 2022-12-12 04:41:50 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afgwagawgwg"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 8.2ms
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 25749)
+
+
+  
+ArgumentError (SMTP From address may not be blank):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/afgwagawgwg" for 172.20.0.1 at 2022-12-12 04:44:57 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afgwagawgwg"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.5ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.8ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 20.8ms
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 25724)
+
+
+  
+ArgumentError (SMTP From address may not be blank):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/afgwagawgwg" for 172.20.0.1 at 2022-12-12 04:45:01 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afgwagawgwg"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 11.6ms
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 23246)
+
+
+  
+ArgumentError (SMTP From address may not be blank):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/afgwagawgwg" for 172.20.0.1 at 2022-12-12 04:45:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afgwagawgwg"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 7.2ms
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 79995)
+
+
+  
+Launchy::CommandNotFoundError (Unable to find a browser command. If this is unexpected, Please rerun with environment variable LAUNCHY_DEBUG=true or the '-d' commandline option and file a bug at https://github.com/copiousfreetime/launchy/issues/new):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:57:03 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 364)
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 36633)
+Completed 200 OK in 149ms (Views: 81.7ms | ActiveRecord: 11.8ms | Allocations: 57689)
+
+
+Started GET "/ctycrx" for 172.20.0.1 at 2022-12-12 04:57:08 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"ctycrx"}
+ErrorInfoMailer#catch_error: processed outbound mail in 2.4ms
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 15619)
+
+
+  
+RuntimeError (Invalid delivery method :letter_opener):
+  
+app/mailers/error_info_mailer.rb:5:in `catch_error'
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/ctycrx" for 172.20.0.1 at 2022-12-12 04:57:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"ctycrx"}
+ErrorInfoMailer#catch_error: processed outbound mail in 2.4ms
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5856)
+
+
+  
+RuntimeError (Invalid delivery method :letter_opener):
+  
+app/mailers/error_info_mailer.rb:5:in `catch_error'
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/ctycrx" for 172.20.0.1 at 2022-12-12 04:57:52 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"ctycrx"}
+ErrorInfoMailer#catch_error: processed outbound mail in 2.0ms
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5854)
+
+
+  
+RuntimeError (Invalid delivery method :letter_opener):
+  
+app/mailers/error_info_mailer.rb:5:in `catch_error'
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/" for 172.20.0.1 at 2022-12-12 04:57:55 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7654)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 10966)
+
+
+Started GET "/afaegag" for 172.20.0.1 at 2022-12-12 04:58:00 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"afaegag"}
+ErrorInfoMailer#catch_error: processed outbound mail in 4.7ms
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5856)
+
+
+  
+RuntimeError (Invalid delivery method :letter_opener):
+  
+app/mailers/error_info_mailer.rb:5:in `catch_error'
+app/controllers/application_controller.rb:16:in `send_error_info'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 172.21.0.1 at 2022-12-12 05:02:04 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 9 pending migrations:
+
+20171211191210_create_workspaces.rb
+20171211191243_create_job_roles.rb
+20210921193207_create_people.rb
+20210922174615_add_birth_state_to_people.rb
+20210924185608_create_contacts.rb
+20210927174801_add_people_to_contacts.rb
+20210928181700_create_welcomes.rb
+20221130022436_devise_create_users.rb
+20221202224134_add_admin_to_user.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/evented_file_update_checker.rb:57:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+better_errors (2.9.1) lib/better_errors/middleware.rb:62:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (6.0.0) lib/puma/configuration.rb:268:in `call'
+puma (6.0.0) lib/puma/request.rb:89:in `block in handle_request'
+puma (6.0.0) lib/puma/thread_pool.rb:343:in `with_force_shutdown'
+puma (6.0.0) lib/puma/request.rb:88:in `handle_request'
+puma (6.0.0) lib/puma/server.rb:430:in `process_client'
+puma (6.0.0) lib/puma/server.rb:233:in `block in run'
+puma (6.0.0) lib/puma/thread_pool.rb:150:in `block in spawn_thread'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkspaces (20171211191210)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "workspaces" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191210"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJobRoles (20171211191243)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "job_roles" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191243"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePeople (20210921193207)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "description" character varying, "registration" character varying, "birth_date" date, "birth_county" character varying, "marital_status" character varying, "sex" character varying, "workspace_id" bigint, "job_role_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_cdb8084085"
+FOREIGN KEY ("workspace_id")
+  REFERENCES "workspaces" ("id")
+, CONSTRAINT "fk_rails_9f83277d08"
+FOREIGN KEY ("job_role_id")
+  REFERENCES "job_roles" ("id")
+)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE INDEX "index_people_on_workspace_id" ON "people" ("workspace_id")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_people_on_job_role_id" ON "people" ("job_role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210921193207"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBirthStateToPeople (20210922174615)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "people" ADD "birth_state" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210922174615"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateContacts (20210924185608)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" bigserial primary key, "telephone" character varying, "cell_phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210924185608"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPeopleToContacts (20210927174801)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contacts" ADD "person_id" bigint[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_contacts_on_person_id" ON "contacts" ("person_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "contacts" ADD CONSTRAINT "fk_rails_29a08acb61"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210927174801"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWelcomes (20210928181700)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "welcomes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210928181700"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20221130022436)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221130022436"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUser (20221202224134)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202224134"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-12 05:02:15.211326"], ["updated_at", "2022-12-12 05:02:15.211326"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.21.0.1 at 2022-12-12 05:02:18 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 6.1ms | Allocations: 8831)
+
+
+Started GET "/users/sign_in" for 172.21.0.1 at 2022-12-12 05:02:18 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 596)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 371.4ms | Allocations: 193115)
+  Rendered layout layouts/application.html.erb (Duration: 429.4ms | Allocations: 225314)
+Completed 200 OK in 454ms (Views: 431.4ms | ActiveRecord: 0.0ms | Allocations: 239946)
+
+
+Started GET "/users/shuyvyuvyu" for 172.21.0.1 at 2022-12-12 05:02:22 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"users/shuyvyuvyu"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.6ms | Allocations: 120)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.3ms | Allocations: 295)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.9ms | Allocations: 260)
+ErrorInfoMailer#catch_error: processed outbound mail in 33.7ms
+Completed 500 Internal Server Error in 6936ms (ActiveRecord: 0.0ms | Allocations: 36542)
+
+
+  
+Net::SMTPAuthenticationError (451 Authentication failed: Could not authenticate
+):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/users/shuyvyuvyu" for 172.21.0.1 at 2022-12-12 05:05:20 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"users/shuyvyuvyu"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 97)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 41.2ms
+Completed 500 Internal Server Error in 1633ms (ActiveRecord: 0.0ms | Allocations: 23689)
+
+
+  
+Net::SMTPAuthenticationError (451 Authentication failed: Could not authenticate
+):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+Started GET "/users/sign_in" for 172.21.0.1 at 2022-12-12 05:05:28 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 39.9ms | Allocations: 11916)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 19522)
+Completed 200 OK in 66ms (Views: 60.6ms | ActiveRecord: 0.0ms | Allocations: 22798)
+
+
+Started GET "/ushrehaseh" for 172.21.0.1 at 2022-12-12 05:05:31 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"ushrehaseh"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.3ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 9.9ms
+Completed 500 Internal Server Error in 1407ms (ActiveRecord: 0.0ms | Allocations: 23678)
+
+
+  
+Net::SMTPAuthenticationError (451 Authentication failed: Could not authenticate
+):
+  
+app/controllers/application_controller.rb:16:in `send_error_info'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:23:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 9 pending migrations:
+
+20171211191210_create_workspaces.rb
+20171211191243_create_job_roles.rb
+20210921193207_create_people.rb
+20210922174615_add_birth_state_to_people.rb
+20210924185608_create_contacts.rb
+20210927174801_add_people_to_contacts.rb
+20210928181700_create_welcomes.rb
+20221130022436_devise_create_users.rb
+20221202224134_add_admin_to_user.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/evented_file_update_checker.rb:57:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+better_errors (2.9.1) lib/better_errors/middleware.rb:62:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (6.0.0) lib/puma/configuration.rb:268:in `call'
+puma (6.0.0) lib/puma/request.rb:89:in `block in handle_request'
+puma (6.0.0) lib/puma/thread_pool.rb:343:in `with_force_shutdown'
+puma (6.0.0) lib/puma/request.rb:88:in `handle_request'
+puma (6.0.0) lib/puma/server.rb:430:in `process_client'
+puma (6.0.0) lib/puma/server.rb:233:in `block in run'
+puma (6.0.0) lib/puma/thread_pool.rb:150:in `block in spawn_thread'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkspaces (20171211191210)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "workspaces" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191210"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJobRoles (20171211191243)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "job_roles" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191243"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePeople (20210921193207)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "description" character varying, "registration" character varying, "birth_date" date, "birth_county" character varying, "marital_status" character varying, "sex" character varying, "workspace_id" bigint, "job_role_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_cdb8084085"
+FOREIGN KEY ("workspace_id")
+  REFERENCES "workspaces" ("id")
+, CONSTRAINT "fk_rails_9f83277d08"
+FOREIGN KEY ("job_role_id")
+  REFERENCES "job_roles" ("id")
+)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE INDEX "index_people_on_workspace_id" ON "people" ("workspace_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE INDEX "index_people_on_job_role_id" ON "people" ("job_role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210921193207"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBirthStateToPeople (20210922174615)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "people" ADD "birth_state" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210922174615"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateContacts (20210924185608)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" bigserial primary key, "telephone" character varying, "cell_phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210924185608"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPeopleToContacts (20210927174801)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "contacts" ADD "person_id" bigint[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_contacts_on_person_id" ON "contacts" ("person_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "contacts" ADD CONSTRAINT "fk_rails_29a08acb61"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210927174801"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWelcomes (20210928181700)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "welcomes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210928181700"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20221130022436)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221130022436"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUser (20221202224134)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202224134"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-12 05:24:03.194131"], ["updated_at", "2022-12-12 05:24:03.194131"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:24:11 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 4247)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:24:11 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 596)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 450.1ms | Allocations: 193100)
+  Rendered layout layouts/application.html.erb (Duration: 507.8ms | Allocations: 225301)
+Completed 200 OK in 535ms (Views: 510.3ms | ActiveRecord: 4.3ms | Allocations: 241396)
+
+
+Started GET "/usenjnionk" for 172.23.0.1 at 2022-12-12 05:24:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"usenjnionk"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.4ms | Allocations: 120)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.9ms | Allocations: 295)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 260)
+ErrorInfoMailer#catch_error: processed outbound mail in 21.0ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 2407ms (ActiveRecord: 0.0ms | Allocations: 48048)
+
+
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:24:20 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 2944)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:24:20 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 39.5ms | Allocations: 11909)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 19489)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 22770)
+
+
+Started GET "/usnrdndrj" for 172.23.0.1 at 2022-12-12 05:24:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"usnrdndrj"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 15.3ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 2326ms (ActiveRecord: 0.0ms | Allocations: 28835)
+
+
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:24:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 2944)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:24:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 50.7ms | Allocations: 11899)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 19447)
+Completed 200 OK in 74ms (Views: 68.5ms | ActiveRecord: 0.0ms | Allocations: 22721)
+
+
+Started GET "/usergagagaaw" for 172.23.0.1 at 2022-12-12 05:25:19 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"usergagagaaw"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.8ms | Allocations: 95)
+ErrorInfoMailer#catch_error: processed outbound mail in 51.1ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 7253ms (ActiveRecord: 0.0ms | Allocations: 28820)
+
+
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:25:27 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 2944)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:25:27 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 40.4ms | Allocations: 11890)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 19491)
+Completed 200 OK in 71ms (Views: 65.2ms | ActiveRecord: 0.0ms | Allocations: 22764)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:27:34 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:27:34 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 282.4ms | Allocations: 193268)
+  Rendered layout layouts/application.html.erb (Duration: 329.8ms | Allocations: 225542)
+Completed 200 OK in 367ms (Views: 334.4ms | ActiveRecord: 3.7ms | Allocations: 242881)
+
+
+Started GET "/users/sjhblbhljbjkl" for 172.23.0.1 at 2022-12-12 05:27:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"users/sjhblbhljbjkl"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.8ms | Allocations: 120)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.7ms | Allocations: 295)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.0ms | Allocations: 260)
+ErrorInfoMailer#catch_error: processed outbound mail in 20.5ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 2224ms (ActiveRecord: 0.0ms | Allocations: 48125)
+
+
+Started GET "/" for 172.23.0.1 at 2022-12-12 05:27:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 2944)
+
+
+Started GET "/users/sign_in" for 172.23.0.1 at 2022-12-12 05:27:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 11908)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 19524)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 22805)
+
+
