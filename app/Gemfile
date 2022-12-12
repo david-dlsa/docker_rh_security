@@ -28,7 +28,12 @@ gem 'devise'
 gem 'letter_opener'
 gem 'validators', '3.0.2'
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+gem "pg"
+# Google authentication
+gem 'omniauth-google-oauth2', '~> 1.1.1'
+
+# Google authentication
+gem 'omniauth-rails_csrf_protection', '~> 1.0.1'
 
 # frontend
 gem 'bootstrap-sass'
