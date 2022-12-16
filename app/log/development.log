@@ -38369,3 +38369,336 @@ Net::SMTPAuthenticationError (501 Username used for auth is not valid email addr
 ):
   
 app/controllers/application_controller.rb:20:in `send_error_info'
+Started GET "/portal/cable" for 172.23.0.1 at 2022-12-16 03:14:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 15.4ms
+Started GET "/portal/cable" for 172.23.0.1 at 2022-12-16 03:14:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.3ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 17.4ms
+Completed 500 Internal Server Error in 1225ms (ActiveRecord: 0.0ms | Allocations: 49488)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Started GET "/portal/cable" for 172.23.0.1 at 2022-12-16 03:14:06 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 13.2ms
+Completed 500 Internal Server Error in 1268ms (ActiveRecord: 0.0ms | Allocations: 177966)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Started GET "/portal/cable" for 172.23.0.1 at 2022-12-16 03:14:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 9.3ms
+Completed 500 Internal Server Error in 1161ms (ActiveRecord: 0.0ms | Allocations: 177889)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Completed 500 Internal Server Error in 1208ms (ActiveRecord: 0.0ms | Allocations: 152793)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <top (required)> at /app/app/models/application_record.rb:1)
+  [1m[35m (31.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkspaces (20171211191210)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "workspaces" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191210"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJobRoles (20171211191243)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "job_roles" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171211191243"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePeople (20210921193207)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "description" character varying, "registration" character varying, "birth_date" date, "birth_county" character varying, "marital_status" character varying, "sex" character varying, "workspace_id" bigint, "job_role_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_cdb8084085"
+FOREIGN KEY ("workspace_id")
+  REFERENCES "workspaces" ("id")
+, CONSTRAINT "fk_rails_9f83277d08"
+FOREIGN KEY ("job_role_id")
+  REFERENCES "job_roles" ("id")
+)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_people_on_workspace_id" ON "people" ("workspace_id")[0m
+  [1m[35m (33.7ms)[0m  [1m[35mCREATE INDEX "index_people_on_job_role_id" ON "people" ("job_role_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210921193207"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBirthStateToPeople (20210922174615)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "people" ADD "birth_state" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210922174615"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateContacts (20210924185608)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" bigserial primary key, "telephone" character varying, "cell_phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210924185608"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPeopleToContacts (20210927174801)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contacts" ADD "person_id" bigint[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_contacts_on_person_id" ON "contacts" ("person_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "contacts" ADD CONSTRAINT "fk_rails_29a08acb61"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210927174801"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWelcomes (20210928181700)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "welcomes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210928181700"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20221130022436)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221130022436"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUser (20221202224134)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202224134"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCdgUserToPeople (20221202224135)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "people" ADD "user_id" bigint[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE INDEX "index_people_on_user_id" ON "people" ("user_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "people" ADD CONSTRAINT "fk_rails_b39dcee1e8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202224135"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-16 03:45:28.356019"], ["updated_at", "2022-12-16 03:45:28.356019"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/local/bundle/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/users/sign_in" for 172.24.0.1 at 2022-12-16 03:45:30 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 601)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 448.7ms | Allocations: 193370)
+  Rendered layout layouts/application.html.erb (Duration: 450.3ms | Allocations: 194070)
+Completed 200 OK in 495ms (Views: 458.3ms | ActiveRecord: 5.3ms | Allocations: 216109)
+
+
+Started GET "/users/sign_up" for 172.24.0.1 at 2022-12-16 03:45:39 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 119)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.8ms | Allocations: 9474)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 9868)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 13474)
+
+
+Started POST "/users" for 172.24.0.1 at 2022-12-16 03:45:45 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcL5wmuSjricVH/n0y1wMri4WAhhf3k/zalSwXsIwKZbTSmM+C6M27A+ebbS6Ud5wRWIRWz6nVqTgxoFwSdhXg==", "user"=>{"email"=>"david@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "david@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "david@gmail.com"], ["encrypted_password", "[FILTERED]"], ["created_at", "2022-12-16 03:45:45.703393"], ["updated_at", "2022-12-16 03:45:45.703393"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 310ms (ActiveRecord: 4.2ms | Allocations: 11853)
+
+
+Started GET "/" for 172.24.0.1 at 2022-12-16 03:45:45 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authenticate_user!'
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 183)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 589)
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 4736)
+
+
+Started GET "/people" for 172.24.0.1 at 2022-12-16 03:45:48 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PeopleController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authenticate_user!'
+  [1m[36mJobRole Pluck (0.6ms)[0m  [1m[34mSELECT "job_roles"."title", "job_roles"."id" FROM "job_roles"[0m
+  ↳ app/controllers/people_controller.rb:93:in `job_role_title'
+  [1m[36mWorkspace Pluck (0.3ms)[0m  [1m[34mSELECT "workspaces"."title", "workspaces"."id" FROM "workspaces"[0m
+  ↳ app/controllers/people_controller.rb:97:in `workspace_title'
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.0ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."user_id" = $1 ORDER BY "people"."description" ASC[0m  [["user_id", 1]]
+  ↳ app/views/people/index.html.erb:69
+  Rendered people/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1830)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2212)
+Completed 200 OK in 145ms (Views: 10.7ms | ActiveRecord: 7.1ms | Allocations: 15240)
+
+
+Started GET "/portal/cable" for 172.24.0.1 at 2022-12-16 03:46:05 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 123)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.1ms | Allocations: 300)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.4ms | Allocations: 110)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.0ms | Allocations: 266)
+ErrorInfoMailer#catch_error: processed outbound mail in 28.6ms
+Started GET "/portal/cable" for 172.24.0.1 at 2022-12-16 03:46:05 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 9.0ms
+Completed 500 Internal Server Error in 1817ms (ActiveRecord: 0.0ms | Allocations: 62556)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Completed 500 Internal Server Error in 1676ms (ActiveRecord: 0.0ms | Allocations: 104641)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Started GET "/portal/cable" for 172.24.0.1 at 2022-12-16 03:46:07 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 102)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 19.8ms
+Started GET "/portal/cable" for 172.24.0.1 at 2022-12-16 03:46:07 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#send_error_info as HTML
+  Parameters: {"unmatched"=>"portal/cable"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering error_info_mailer/catch_error.html.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 103)
+  Rendering layout layouts/mailer.text.erb
+  Rendering error_info_mailer/catch_error.text.erb within layouts/mailer
+  Rendered error_info_mailer/catch_error.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 101)
+ErrorInfoMailer#catch_error: processed outbound mail in 17.1ms
+Completed 500 Internal Server Error in 1670ms (ActiveRecord: 0.0ms | Allocations: 49851)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
+Completed 500 Internal Server Error in 1779ms (ActiveRecord: 0.0ms | Allocations: 104368)
+
+
+  
+Net::SMTPAuthenticationError (501 Username used for auth is not valid email address
+):
+  
+app/controllers/application_controller.rb:20:in `send_error_info'
