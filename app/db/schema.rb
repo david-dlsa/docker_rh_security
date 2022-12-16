@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_02_224134) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_02_224135) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,7 +42,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_02_224134) do
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
     t.string "birth_state"
+    t.bigint "user_id"
     t.index ["job_role_id"], name: "index_people_on_job_role_id"
+    t.index ["user_id"], name: "index_people_on_user_id"
     t.index ["workspace_id"], name: "index_people_on_workspace_id"
   end
 
@@ -86,5 +88,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_02_224134) do
 
   add_foreign_key "contacts", "people"
   add_foreign_key "people", "job_roles"
+  add_foreign_key "people", "users"
   add_foreign_key "people", "workspaces"
 end

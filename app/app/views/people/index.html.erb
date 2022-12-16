@@ -36,12 +36,11 @@
             <div>
               <%= select_tag 'search_job_role', options_for_select(@job_role_title.collect{ |u| [u[0], u[1]] }), {include_blank: 'Selecione o Cargo...', class: "form-select"}%>
             </div>
-        </div> 
-        <% if authenticate_adm? %>
-          <div class="col-md-11">
-            <%= link_to "Nova Pessoa", new_person_path, class: "btn btn-success" %>
-          </div>
-        <% end %>
+        </div>
+        <div class="col-md-11">
+          <%= link_to "Nova Pessoa", new_person_path, class: "btn btn-success" %>
+        </div>
+
         
         <div class="col">
           <%= submit_tag "Filtrar", class:  "btn btn-primary"%>
@@ -76,8 +75,8 @@
         <td><%= person.workspace.title %></td>
         <td><%= person.job_role.title %></td>
         <td><%= link_to fa_icon("eye"), person %></td>
-        <td><%= link_to fa_icon("edit"), edit_person_path(person) if authenticate_adm? %></td>
-        <td><%= link_to fa_icon("trash"), person, method: :delete, data: { confirm: 'Tem certeza?' } if authenticate_adm?%></td>
+        <td><%= link_to fa_icon("edit"), edit_person_path(person) if authenticate_adm? || current_user.id == person.user_id %></td>
+        <td><%= link_to fa_icon("trash"), person, method: :delete, data: { confirm: 'Tem certeza?' } if authenticate_adm? || current_user.id == person.user_id %></td>
       </tr>
     <% end %>
   </tbody>

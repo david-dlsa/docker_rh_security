@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
     return true if current_user && current_user.admin
   end
 
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
+  end
+
   def send_error_info
     erro_info = params.merge(client_ip: request.remote_ip,
                              at: DateTime.now)

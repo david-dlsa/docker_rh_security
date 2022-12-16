@@ -7,12 +7,21 @@ class PeopleController < ApplicationController
 
   # GET /people or /people.json
   def index
-    @people = Person.all
-    @people = @people.where(("description like '%#{params[:search]}%'")).or(Person.where("cast(registration as text) like '%#{params[:search]}%'")) if params[:search].present?
-    @people = @people.where(workspace_id: params[:search_workspace]) if params[:search_workspace].present?
-    @people = @people.where(job_role_id: params[:search_job_role]) if params[:search_job_role].present?
-    @people = @people.where(sex: params[:search_sex]) if params[:search_sex].present?
-    @people = @people.order(:description)
+    if authenticate_adm?
+      @people = Person.all
+      @people = @people.where(("description like '%#{params[:search]}%'")).or(Person.where("cast(registration as text) like '%#{params[:search]}%'")) if params[:search].present?
+      @people = @people.where(workspace_id: params[:search_workspace]) if params[:search_workspace].present?
+      @people = @people.where(job_role_id: params[:search_job_role]) if params[:search_job_role].present?
+      @people = @people.where(sex: params[:search_sex]) if params[:search_sex].present?
+      @people = @people.order(:description)
+    else
+      @people = current_user.people
+      @people = @people.where(("description like '%#{params[:search]}%'")).or(Person.where("cast(registration as text) like '%#{params[:search]}%'")) if params[:search].present?
+      @people = @people.where(workspace_id: params[:search_workspace]) if params[:search_workspace].present?
+      @people = @people.where(job_role_id: params[:search_job_role]) if params[:search_job_role].present?
+      @people = @people.where(sex: params[:search_sex]) if params[:search_sex].present?
+      @people = @people.order(:description)
+    end
   end
 
   # GET /people/1 or /people/1.json
@@ -30,7 +39,7 @@ class PeopleController < ApplicationController
 
   # POST /people or /people.json
   def create
-    @person = Person.new(person_params)
+    @person = current_user.people.build(person_params)
 
     respond_to do |format|
       if @person.save
@@ -68,9 +77,15 @@ class PeopleController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_person
-      @person = Person.find_by(id: params[:id])
-      @contacts = Contact.where(person_id: params[:id]).paginate(page: params[:page], per_page: 5)
-      self.send_error_info unless @person.present?
+      if authenticate_adm?
+        @person = Person.all.find_by(id: params[:id])
+        @contacts = Contact.where(person_id: params[:id]).paginate(page: params[:page], per_page: 5)
+        self.send_error_info unless @person.present?
+      else
+        @person = current_user.people.find_by(id: params[:id])
+        @contacts = Contact.where(person_id: params[:id]).paginate(page: params[:page], per_page: 5)
+        self.send_error_info unless @person.present?
+      end
 
     end
 

@@ -2,7 +2,7 @@ class ErrorInfoMailer < ApplicationMailer
   before_action :load_error
 
   def catch_error
-    mail to: 'laykabuss@gmail.com',
+    mail to: ENV['EMAIL_FROM'],
          subject: "Error was catched"
   end
 
