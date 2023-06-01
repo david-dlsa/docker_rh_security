@@ -10,6 +10,6 @@ gem 'zeus'
 
 # YARD
 gem 'yard'
-gem 'redcarpet'
+gem 'redcarpet', '>= 3.5.1'
 gem 'pygments.rb'
 gem 'fssm'
