@@ -59,7 +59,7 @@ gem 'turbolinks'
 
 group :development do
   gem 'better_errors'
-  gem 'web-console'
+  gem 'web-console', '>= 4.2.1'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
