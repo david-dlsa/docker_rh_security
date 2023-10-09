@@ -14,7 +14,7 @@ gem 'jbuilder'
 gem 'mini_magick'
 gem "paperclip"
 gem 'puma'
-gem 'rails'
+gem 'rails', '>= 7.1.0'
 gem 'therubyracer'
 gem 'uglifier'
 gem 'will_paginate'
