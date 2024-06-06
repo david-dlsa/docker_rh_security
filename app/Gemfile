@@ -14,7 +14,7 @@ gem 'jbuilder'
 gem 'mini_magick'
 gem "paperclip"
 gem 'puma'
-gem 'rails'
+gem 'rails', '>= 7.0.8.4'
 gem 'therubyracer'
 gem 'uglifier'
 gem 'will_paginate'
@@ -22,9 +22,9 @@ gem 'will_paginate'
 
 
 gem 'binding_of_caller'
-gem 'rails-i18n'
-gem 'webpacker'
-gem 'devise'
+gem 'rails-i18n', '>= 7.0.7'
+gem 'webpacker', '>= 5.4.4'
+gem 'devise', '>= 4.9.0'
 #gem 'letter_opener'
 gem 'validators'
 # Use postgresql as the database for Active Record
@@ -33,7 +33,7 @@ gem "pg"
 gem 'omniauth-google-oauth2'
 
 # Google authentication
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.2'
 
 
 # frontend
@@ -41,9 +41,9 @@ gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 gem 'font-awesome-rails'
 gem 'haml'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'simple_form'
+gem 'jquery-rails', '>= 4.6.0'
+gem 'jquery-ui-rails', '>= 7.0.0'
+gem 'simple_form', '>= 5.2.0'
 gem 'cocoon'
 gem 'sass-rails'
 gem 'turbolinks'
@@ -59,7 +59,7 @@ gem 'turbolinks'
 
 group :development do
   gem 'better_errors'
-  gem 'web-console'
+  gem 'web-console', '>= 4.2.1'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
