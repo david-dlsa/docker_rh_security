@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.7.7
 RUN mkdir -p /scenario
 WORKDIR /scenario
 ENV LANG=C.UTF-8
