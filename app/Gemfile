@@ -22,7 +22,7 @@ gem 'will_paginate'
 
 
 gem 'binding_of_caller'
-gem 'rails-i18n'
+gem 'rails-i18n', '>= 8.0.0'
 gem 'webpacker'
 gem 'devise'
 #gem 'letter_opener'
